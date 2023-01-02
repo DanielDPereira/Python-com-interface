@@ -26,10 +26,11 @@ while True:
     delta = b**2 - 4*a*c
     
     if delta > 0:
-        X1 = -1*b + delta**0.5 / 2 * a
-        X2 = -1*b - delta**0.5 / 2 * a
+        X1 = (-1*b + delta**0.5) / (2 * a)
+        X2 = (-1*b - delta**0.5) / (2 * a)
         
         print("Os valores de X são ", X1, X2)
+        print(delta)
     
     if delta < 0:
         X = "Ø"
@@ -37,7 +38,7 @@ while True:
         print("Não é possível calcular X, pois deltta é negativo")
         
     if delta == 0:
-        X = -1*b + delta**0.5 / 2 * a
+        X = (-1*b + delta**0.5) / (2 * a)
         
         print("X é ", X)
       
