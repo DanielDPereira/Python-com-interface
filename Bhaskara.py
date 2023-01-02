@@ -2,9 +2,9 @@ import PySimpleGUI as sg
 
 sg.theme('DarkAmber')   # Add a touch of color
 # All the stuff inside your window.
-layout = [  [sg.Text('Number 1'), sg.InputText("Insira o valor de a")],
-            [sg.Text('Number 2'), sg.InputText("Insira o valor de b")],
-            [sg.Text('Number 3'), sg.InputText("Insira o valor de c")],
+layout = [  [sg.Text('Insira a'), sg.InputText()],
+            [sg.Text('Insira b'), sg.InputText()],
+            [sg.Text('Insira c'), sg.InputText()],
             [sg.Button('Ok'), sg.Button('Cancel')] ]
 
 
