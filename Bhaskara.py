@@ -11,7 +11,7 @@ layout = [  [sg.Text('Number 1'), sg.InputText()],
 
 a = int(values[0])
 b = int(values[1])
-c
+c = int(values[2])
 
 # Create the Window
 window = sg.Window('Window Title', layout)
