@@ -10,7 +10,7 @@ layout = [  [sg.Text('Number 1'), sg.InputText()],
 #Bhaskara 
 
 a = int(values[0])
-b
+b = int(values[1])
 c
 
 # Create the Window
