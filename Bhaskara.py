@@ -17,6 +17,8 @@ while True:
     if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
         break
     
+    print('You entered ', a, b, c,)
+    
     #Bhaskara
     
     if values[0] == "":
@@ -46,13 +48,11 @@ while True:
     if delta < 0:
         X = "Ø"
         
-        print("Não é possível calcular X, pois deltta é negativo")
+        print("Não é possível calcular X, pois delta é negativo")
         
     if delta == 0:
         X = (-1*b + delta**0.5) / (2 * a)
         
         print("X é ", X)
-      
-    print('You entered ', a, b, c,)
 
 window.close()
