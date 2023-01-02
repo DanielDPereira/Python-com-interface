@@ -19,13 +19,13 @@ while True:
     
     #Bhaskara
     
-    if a == "":
+    if values[0] == "":
         a = 0
         
-    if b == "":
+    if values[1] == "":
         b = 0
     
-    if c == "":
+    if values[2] == "":
         c = 0
     
     a = float(values[0])
