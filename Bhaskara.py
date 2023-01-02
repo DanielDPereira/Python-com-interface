@@ -19,9 +19,9 @@ while True:
     
     #Bhaskara
     
-    a = int(values[0])
-    b = int(values[1])
-    c = int(values[2])
+    a = float(values[0])
+    b = float(values[1])
+    c = float(values[2])
   
     print('You entered ', a, b, c,)
 
