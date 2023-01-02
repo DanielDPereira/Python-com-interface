@@ -27,10 +27,20 @@ while True:
     
     if delta > 0:
         X1 = -1*b + delta**0.5 / 2 * a
-        X2 = -1*b - delta**0.5 / 2 * a        
+        X2 = -1*b - delta**0.5 / 2 * a
+        
+        print("Os valores de X são ", X1, X2)
     
-    #-b+-(delta)**0.5/2*a
-  
+    if delta < 0:
+        X = "Ø"
+        
+        print("Não é possível calcular X, pois deltta é negativo")
+        
+    if delta == 0:
+        X = -1*b + delta**0.5 / 2 * a
+        
+        print("X é ", X)
+      
     print('You entered ', a, b, c,)
 
 window.close()
