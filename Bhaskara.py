@@ -21,16 +21,18 @@ while True:
     
     if values[0] == "":
         a = 0
+    else:
+        a = float(values[0])
         
     if values[1] == "":
         b = 0
+    else:
+        b = float(values[1])
     
     if values[2] == "":
         c = 0
-    
-    a = float(values[0])
-    b = float(values[1])
-    c = float(values[2])
+    else:
+        c = float(values[2])
     
     delta = b**2 - 4*a*c
     
