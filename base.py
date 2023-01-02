@@ -1,6 +1,3 @@
-from ast import Import
-
-
 import PySimpleGUI as sg
 
 sg.theme('DarkAmber')   # Add a touch of color
