@@ -22,6 +22,8 @@ while True:
     a = float(values[0])
     b = float(values[1])
     c = float(values[2])
+    
+    #-b+-(delta)**0.5/2*a
   
     print('You entered ', a, b, c,)
 
