@@ -7,6 +7,12 @@ layout = [  [sg.Text('Number 1'), sg.InputText()],
             [sg.Text('Number 3'), sg.InputText()],
             [sg.Button('Ok'), sg.Button('Cancel')] ]
 
+#Bhaskara 
+
+a = int(values[0])
+b
+c
+
 # Create the Window
 window = sg.Window('Window Title', layout)
 # Event Loop to process "events" and get the "values" of the inputs
