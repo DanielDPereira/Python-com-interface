@@ -2,15 +2,15 @@ import PySimpleGUI as sg
 
 sg.theme('DarkAmber')   # Add a touch of color
 # All the stuff inside your window.
-layout = [  [sg.Text('Number 1'), sg.InputText()],
-            [sg.Text('Number 2'), sg.InputText()],
-            [sg.Text('Number 3'), sg.InputText()],
+layout = [  [sg.Text('Number 1'), sg.InputText("Insira o valor de a")],
+            [sg.Text('Number 2'), sg.InputText("Insira o valor de b")],
+            [sg.Text('Number 3'), sg.InputText("Insira o valor de c")],
             [sg.Button('Ok'), sg.Button('Cancel')] ]
 
 
 
 # Create the Window
-window = sg.Window('Window Title', layout)
+window = sg.Window('Bhaskara', layout)
 # Event Loop to process "events" and get the "values" of the inputs
 while True:
     event, values = window.read()
@@ -18,6 +18,15 @@ while True:
         break
     
     #Bhaskara
+    
+    if a == "":
+        a = 0
+        
+    if b == "":
+        b = 0
+    
+    if c == "":
+        c = 0
     
     a = float(values[0])
     b = float(values[1])
