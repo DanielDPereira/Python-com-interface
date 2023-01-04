@@ -17,7 +17,7 @@ while True:
     if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
         break
     
-    print('You entered ', a, b, c,)
+    #print('You entered ', a, b, c,)
     
     #Bhaskara
     
@@ -54,5 +54,7 @@ while True:
         X = (-1*b + delta**0.5) / (2 * a)
         
         print("X é ", X)
+        
+
 
 window.close()
