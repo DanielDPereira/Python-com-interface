@@ -45,7 +45,7 @@ while True:
         print("Os valores de X são ", X1, X2)
         print(delta)
     
-    if delta < 0:
+    elif delta < 0:
         X = "Ø"
         
         print("Não é possível calcular X, pois delta é negativo")
