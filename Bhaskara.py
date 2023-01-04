@@ -50,7 +50,7 @@ while True:
         
         print("Não é possível calcular X, pois delta é negativo")
         
-    if delta == 0:
+    elif delta == 0:
         X = (-1*b + delta**0.5) / (2 * a)
         
         print("X é ", X)
