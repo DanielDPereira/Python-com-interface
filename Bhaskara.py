@@ -61,6 +61,8 @@ while True:
     elif delta < 0:
         X = "Ø"
         
+        window.close()
+        
         layout1 = [[sg.Text('A equação não possui solução dentre os números reais.')],
             [sg.Text('Created by DanielDPereira')]]
 
@@ -70,6 +72,8 @@ while True:
         
     elif delta == 0:
         X = (-1*b + delta**0.5) / (2 * a)
+        
+        window.close()
         
         layout1 = [[sg.Text('X possui apenas um valor, que é:')],
             [sg.Text(X)],
