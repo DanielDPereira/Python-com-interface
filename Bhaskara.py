@@ -47,6 +47,12 @@ while True:
         
         print("Os valores de X são ", X1, X2)
         print(delta)
+        
+        layout = [  [sg.Text('Insira a'), sg.InputText()],
+            [sg.Text('Insira b'), sg.InputText()],
+            [sg.Text('Insira c'), sg.InputText()],
+            [sg.Button('Ok'), sg.Button('Cancel')],
+            [sg.Text('Created by DanielDPereira')]]
     
     elif delta < 0:
         X = "Ø"
