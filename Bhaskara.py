@@ -45,10 +45,7 @@ while True:
         X1 = (-1*b + delta**0.5) / (2 * a)
         X2 = (-1*b - delta**0.5) / (2 * a)
         
-        print("Os valores de X são ", X1, X2)
         print(delta)
-
-
         
         layout1 = [[sg.Text('Os valores de X são:')],
             [sg.Text(X1)],
@@ -56,7 +53,9 @@ while True:
             [sg.Text('Created by DanielDPereira')]]
 
         window = sg.Window('Bhaskara', layout1)
-    
+        
+        print("Os valores de X são ", X1, X2)
+
     elif delta < 0:
         X = "Ø"
         
