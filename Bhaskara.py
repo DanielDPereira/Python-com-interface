@@ -36,8 +36,11 @@ while True:
     else:
         c = float(values[2])
     
+    #Calculo de delta
     delta = b**2 - 4*a*c
     
+    # Se delta...
+     
     if delta > 0:
         X1 = (-1*b + delta**0.5) / (2 * a)
         X2 = (-1*b - delta**0.5) / (2 * a)
