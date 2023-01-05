@@ -47,6 +47,8 @@ while True:
         
         print(delta)
         
+        window.close()
+        
         layout1 = [[sg.Text('Os valores de X são:')],
             [sg.Text(X1)],
             [sg.Text(X2)],
