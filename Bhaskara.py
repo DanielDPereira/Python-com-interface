@@ -48,10 +48,12 @@ while True:
         print("Os valores de X são ", X1, X2)
         print(delta)
         
-        layout = [  [sg.Text('Insira a')],
-            [sg.Text('Insira b')],
-            [sg.Text('Insira c')],
+        layout1 = [[sg.Text('Os valores de X são:')],
+            [sg.Text(X1)],
+            [sg.Text(X2)],
             [sg.Text('Created by DanielDPereira')]]
+
+        window = sg.Window('Bhaskara', layout1)
     
     elif delta < 0:
         X = "Ø"
