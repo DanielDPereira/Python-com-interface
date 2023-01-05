@@ -69,6 +69,12 @@ while True:
     elif delta == 0:
         X = (-1*b + delta**0.5) / (2 * a)
         
+        layout1 = [[sg.Text('X possui apenas um valor, que é:')],
+            [sg.Text(X)],
+            [sg.Text('Created by DanielDPereira')]]
+
+        window = sg.Window('Bhaskara', layout1)
+        
         print("X é ", X)
         
 
