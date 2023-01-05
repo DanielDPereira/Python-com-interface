@@ -47,6 +47,8 @@ while True:
         
         print("Os valores de X são ", X1, X2)
         print(delta)
+
+
         
         layout1 = [[sg.Text('Os valores de X são:')],
             [sg.Text(X1)],
@@ -57,6 +59,11 @@ while True:
     
     elif delta < 0:
         X = "Ø"
+        
+        layout1 = [[sg.Text('A equação não possui solução dentre os números reais.')],
+            [sg.Text('Created by DanielDPereira')]]
+
+        window = sg.Window('Bhaskara', layout1)
         
         print("Não é possível calcular X, pois delta é negativo")
         
