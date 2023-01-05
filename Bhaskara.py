@@ -77,6 +77,4 @@ while True:
         
         print("X é ", X)
         
-
-
 window.close()
