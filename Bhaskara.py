@@ -5,7 +5,8 @@ sg.theme('DarkAmber')   # Add a touch of color
 layout = [  [sg.Text('Insira a'), sg.InputText()],
             [sg.Text('Insira b'), sg.InputText()],
             [sg.Text('Insira c'), sg.InputText()],
-            [sg.Button('Ok'), sg.Button('Cancel')] ]
+            [sg.Button('Ok'), sg.Button('Cancel')],
+            [sg.Text('Created by DanielDPereira')]]
 
 
 
