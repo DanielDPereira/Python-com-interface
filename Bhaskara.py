@@ -78,6 +78,5 @@ while True:
         print("X é ", X)
         
 
-    print('You entered ', a, b, c,)
 
 window.close()
