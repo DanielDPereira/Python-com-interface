@@ -22,18 +22,19 @@ def programa():
         
         if values[0] == "":
             a = 0
-        else:
-            a = float(values[0])
+
+            if a == 0:
+                layout1 = [[sg.Text('A não pode ser 0.')],
+                [sg.Button('Tentar novamente')],
+                [sg.Text('Created by DanielDPereira')]]
+
+            window = sg.Window('Bhaskara', layout1)
             
         if values[1] == "":
             b = 0
-        else:
-            b = float(values[1])
         
         if values[2] == "":
             c = 0
-        else:
-            c = float(values[2])
         
         #Calculo de delta
         delta = b**2 - 4*a*c
