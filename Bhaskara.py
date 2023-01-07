@@ -93,5 +93,21 @@ def programa():
                 event, values = window.read()
                 if event == 'Tentar novamente':
                     programa()
+                    
+        else:
+            window.close()
+                    
+            layout1 = [[sg.Text('X possui apenas um valor, que é:')],
+                [sg.Text(X)],
+                [sg.Button('Tentar novamente')],
+                [sg.Text('Created by DanielDPereira')]]
+
+            window = sg.Window('Bhaskara', layout1)
+                    
+            print("X é ", X)
+                    
+            event, values = window.read()
+            if event == 'Tentar novamente':
+                programa()
         
 programa()    
