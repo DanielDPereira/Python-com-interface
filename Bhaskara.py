@@ -51,6 +51,7 @@ def programa():
             layout1 = [[sg.Text('Os valores de X são:')],
                 [sg.Text(X1)],
                 [sg.Text(X2)],
+                [sg.Button('Tentar novamente')],
                 [sg.Text('Created by DanielDPereira')]]
 
             window = sg.Window('Bhaskara', layout1)
@@ -63,6 +64,7 @@ def programa():
             window.close()
             
             layout1 = [[sg.Text('A equação não possui solução dentre os números reais.')],
+                [sg.Button('Tentar novamente')],
                 [sg.Text('Created by DanielDPereira')]]
 
             window = sg.Window('Bhaskara', layout1)
@@ -76,6 +78,7 @@ def programa():
             
             layout1 = [[sg.Text('X possui apenas um valor, que é:')],
                 [sg.Text(X)],
+                [sg.Button('Tentar novamente')],
                 [sg.Text('Created by DanielDPereira')]]
 
             window = sg.Window('Bhaskara', layout1)
