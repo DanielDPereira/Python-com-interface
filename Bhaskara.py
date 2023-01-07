@@ -94,7 +94,7 @@ def programa():
                 if event == 'Tentar novamente':
                     programa()
                     
-        else:
+        elif b and c == 0:
             window.close()
                     
             layout2 = [[sg.Text('Nenhum valor foi inserido')],
