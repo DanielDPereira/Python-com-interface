@@ -84,5 +84,9 @@ def programa():
             window = sg.Window('Bhaskara', layout1)
             
             print("X é ", X)
+            
+        event, values = window.read()
+        if event == 'Tentar novamente':
+            programa()
         
 programa()    
