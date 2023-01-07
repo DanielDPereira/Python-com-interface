@@ -87,7 +87,7 @@ def programa():
                     X1 = (-1*b + delta**0.5) / (2 * a)
                     X2 = (-1*b - delta**0.5) / (2 * a)
                     
-                    print(delta)
+                    print("O valor de delta é "+delta)
                     
                     window.close()
                     
