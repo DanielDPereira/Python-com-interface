@@ -10,8 +10,6 @@ def programa():
                 [sg.Button('Ok'), sg.Button('Cancel')],
                 [sg.Text('Created by DanielDPereira')]]
 
-
-
     # Create the Window
     window = sg.Window('Bhaskara', layout)
     # Event Loop to process "events" and get the "values" of the inputs
