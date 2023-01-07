@@ -44,9 +44,13 @@ def programa():
                 
                 if values[1] == "":
                     b = 0
+                else:
+                    b = int(values[1])
                 
                 if values[2] == "":
                     c = 0
+                else:
+                    c = int(values[2])
                     
                 if b and c == 0:
                     
