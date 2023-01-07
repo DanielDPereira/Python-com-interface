@@ -32,6 +32,10 @@ def programa():
 
                 window = sg.Window('Bhaskara', layout1)
                 
+                event, values = window.read()
+                if event == 'Tentar novamente':
+                    programa()
+                
                 a = 0
 
             else:
@@ -56,7 +60,17 @@ def programa():
                     event, values = window.read()
                     if event == 'Tentar novamente':
                         programa()
+                        
+                elif values[0] == "" or values[0] == '0' or values[0] == 0:
                 
+                    window.close()
+
+                    layout1 = [[sg.Text('O valor de A não pode ser 0.')],
+                        [sg.Button('Tentar novamente')],
+                        [sg.Text('Created by DanielDPereira')]]
+
+                    window = sg.Window('Bhaskara', layout1)
+                                
                 #Calculo de delta
                 delta = b**2 - 4*a*c
                 
