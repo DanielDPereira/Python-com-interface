@@ -20,7 +20,7 @@ def programa():
         
         #Bhaskara
         
-        if len(values) > 0:
+        if len(values) != 0:
             if values[0] == "" or values[0] == '0' or values[0] == 0:
 
                 window.close()
@@ -97,14 +97,13 @@ def programa():
         else:
             window.close()
                     
-            layout1 = [[sg.Text('X possui apenas um valor, que é:')],
-                [sg.Text(X)],
+            layout2 = [[sg.Text('Nenhum valor foi inserido')],
                 [sg.Button('Tentar novamente')],
                 [sg.Text('Created by DanielDPereira')]]
 
-            window = sg.Window('Bhaskara', layout1)
+            window = sg.Window('Bhaskara', layout2)
                     
-            print("X é ", X)
+            print("Nenhum valor inserido")
                     
             event, values = window.read()
             if event == 'Tentar novamente':
