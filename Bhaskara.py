@@ -7,7 +7,7 @@ def programa():
     layout = [  [sg.Text('Insira a'), sg.InputText()],
                 [sg.Text('Insira b'), sg.InputText()],
                 [sg.Text('Insira c'), sg.InputText()],
-                [sg.Button('Calcular'), sg.Button('Cancel')],
+                [sg.Button('Calcular'), sg.Button('Cancelar')],
                 [sg.Text('Created by DanielDPereira')]]
 
     # Create the Window
@@ -15,7 +15,7 @@ def programa():
     # Event Loop to process "events" and get the "values" of the inputs
     while True:
         event, values = window.read()
-        if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
+        if event == sg.WIN_CLOSED or event == 'Cancelar': # if user closes window or clicks cancel
             break
         
         #Bhaskara
