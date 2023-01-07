@@ -80,6 +80,7 @@ def programa():
                                 
                 #Calculo de delta
                 delta = b**2 - 4*a*c
+                
                 print("O valor de delta é "+delta)
 
                 # Se delta...
@@ -87,7 +88,6 @@ def programa():
                 if delta > 0:
                     X1 = (-1*b + delta**0.5) / (2 * a)
                     X2 = (-1*b - delta**0.5) / (2 * a)
-                    
                     
                     window.close()
                     
