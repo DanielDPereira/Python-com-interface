@@ -23,71 +23,73 @@ def programa():
         if values[0] == "":
             a = 0
 
-            if a == 0:
-                layout1 = [[sg.Text('A não pode ser 0.')],
-                [sg.Button('Tentar novamente')],
-                [sg.Text('Created by DanielDPereira')]]
-
-            window = sg.Window('Bhaskara', layout1)
-            
-        if values[1] == "":
-            b = 0
-        
-        if values[2] == "":
-            c = 0
-        
-        #Calculo de delta
-        delta = b**2 - 4*a*c
-        
-        # Se delta...
-        
-        if delta > 0:
-            X1 = (-1*b + delta**0.5) / (2 * a)
-            X2 = (-1*b - delta**0.5) / (2 * a)
-            
-            print(delta)
-            
             window.close()
-            
-            layout1 = [[sg.Text('Os valores de X são:')],
-                [sg.Text(X1)],
-                [sg.Text(X2)],
-                [sg.Button('Tentar novamente')],
-                [sg.Text('Created by DanielDPereira')]]
+
+            layout1 = [[sg.Text('A não pode ser 0.')],
+            [sg.Button('Tentar novamente')],
+            [sg.Text('Created by DanielDPereira')]]
 
             window = sg.Window('Bhaskara', layout1)
             
-            print("Os valores de X são ", X1, X2)
+        else:
+            if values[1] == "":
+                b = 0
+            
+            if values[2] == "":
+                c = 0
+            
+            #Calculo de delta
+            delta = b**2 - 4*a*c
+            
+            # Se delta...
+            
+            if delta > 0:
+                X1 = (-1*b + delta**0.5) / (2 * a)
+                X2 = (-1*b - delta**0.5) / (2 * a)
+                
+                print(delta)
+                
+                window.close()
+                
+                layout1 = [[sg.Text('Os valores de X são:')],
+                    [sg.Text(X1)],
+                    [sg.Text(X2)],
+                    [sg.Button('Tentar novamente')],
+                    [sg.Text('Created by DanielDPereira')]]
 
-        elif delta < 0:
-            X = "Ø"
-            
-            window.close()
-            
-            layout1 = [[sg.Text('A equação não possui solução dentre os números reais.')],
-                [sg.Button('Tentar novamente')],
-                [sg.Text('Created by DanielDPereira')]]
+                window = sg.Window('Bhaskara', layout1)
+                
+                print("Os valores de X são ", X1, X2)
 
-            window = sg.Window('Bhaskara', layout1)
-            
-            print("Não é possível calcular X, pois delta é negativo")
-            
-        elif delta == 0:
-            X = (-1*b + delta**0.5) / (2 * a)
-            
-            window.close()
-            
-            layout1 = [[sg.Text('X possui apenas um valor, que é:')],
-                [sg.Text(X)],
-                [sg.Button('Tentar novamente')],
-                [sg.Text('Created by DanielDPereira')]]
+            elif delta < 0:
+                X = "Ø"
+                
+                window.close()
+                
+                layout1 = [[sg.Text('A equação não possui solução dentre os números reais.')],
+                    [sg.Button('Tentar novamente')],
+                    [sg.Text('Created by DanielDPereira')]]
 
-            window = sg.Window('Bhaskara', layout1)
-            
-            print("X é ", X)
-            
-        event, values = window.read()
-        if event == 'Tentar novamente':
-            programa()
+                window = sg.Window('Bhaskara', layout1)
+                
+                print("Não é possível calcular X, pois delta é negativo")
+                
+            elif delta == 0:
+                X = (-1*b + delta**0.5) / (2 * a)
+                
+                window.close()
+                
+                layout1 = [[sg.Text('X possui apenas um valor, que é:')],
+                    [sg.Text(X)],
+                    [sg.Button('Tentar novamente')],
+                    [sg.Text('Created by DanielDPereira')]]
+
+                window = sg.Window('Bhaskara', layout1)
+                
+                print("X é ", X)
+                
+            event, values = window.read()
+            if event == 'Tentar novamente':
+                programa()
         
 programa()    
