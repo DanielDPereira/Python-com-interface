@@ -7,7 +7,7 @@ def programa():
     layout = [  [sg.Text('Insira a'), sg.InputText()],
                 [sg.Text('Insira b'), sg.InputText()],
                 [sg.Text('Insira c'), sg.InputText()],
-                [sg.Button('Ok'), sg.Button('Cancel')],
+                [sg.Button('Calcular'), sg.Button('Cancel')],
                 [sg.Text('Created by DanielDPereira')]]
 
     # Create the Window
