@@ -20,7 +20,6 @@ def programa():
         if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
             break
         
-        
         #Bhaskara
         
         if values[0] == "":
