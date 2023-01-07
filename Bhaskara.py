@@ -36,16 +36,19 @@ def programa():
                 if event == 'Tentar novamente':
                     programa()
                 
-                a = 0
+                a = int(values[0])
 
             else:
+                
+                a = int(values[0])
+                
                 if values[1] == "":
                     b = 0
                 
                 if values[2] == "":
                     c = 0
                     
-                if a and b and c == 0:
+                if b and c == 0:
                     
                     window.close()
                     
