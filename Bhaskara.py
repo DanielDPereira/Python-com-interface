@@ -21,6 +21,7 @@ def programa():
         #Bhaskara
         
         if len(values) != 0:
+            
             if values[0] == "" or values[0] == '0' or values[0] == 0:
 
                 window.close()
@@ -39,6 +40,22 @@ def programa():
                 
                 if values[2] == "":
                     c = 0
+                    
+                if a and b and c == 0:
+                    
+                    window.close()
+                    
+                    layout2 = [[sg.Text('Nenhum valor foi inserido')],
+                        [sg.Button('Tentar novamente')],
+                        [sg.Text('Created by DanielDPereira')]]
+
+                    window = sg.Window('Bhaskara', layout2)
+                    
+                    print("Nenhum valor inserido")
+                    
+                    event, values = window.read()
+                    if event == 'Tentar novamente':
+                        programa()
                 
                 #Calculo de delta
                 delta = b**2 - 4*a*c
@@ -93,20 +110,5 @@ def programa():
                 event, values = window.read()
                 if event == 'Tentar novamente':
                     programa()
-                    
-        elif b and c == 0:
-            window.close()
-                    
-            layout2 = [[sg.Text('Nenhum valor foi inserido')],
-                [sg.Button('Tentar novamente')],
-                [sg.Text('Created by DanielDPereira')]]
-
-            window = sg.Window('Bhaskara', layout2)
-                    
-            print("Nenhum valor inserido")
-                    
-            event, values = window.read()
-            if event == 'Tentar novamente':
-                programa()
         
 programa()    
